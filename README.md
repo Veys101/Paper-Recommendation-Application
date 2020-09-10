@@ -1,4 +1,4 @@
-# Paper-Recommendation-Application
+# Paper-Recommendation-Application [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
 The project was written by Python.The aim of Paper Recommendation application is to recommend related paper to users. 
 
 ## Methods used in the project
@@ -10,8 +10,6 @@ The project was written by Python.The aim of Paper Recommendation application is
 - pandas
 
 ## Contributor
-- [Sinem Bozkurt Keser]
+- Sinem Bozkurt Keser
 - [Emine Deniz](https://github.com/denizemine)
 - [Veysel Öz](https://github.com/Veys101)
-
-[![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
