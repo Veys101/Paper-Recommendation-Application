@@ -5,9 +5,21 @@ The project was written by Python.The aim of Paper Recommendation application is
 - Content-Based Filtering
 
 ## Library used in the project
+### Version 1.0 :
 - json
 - numpy
 - pandas
+- TfidfVectorizer
+- sigmoid_kernel
+### Version 2.0 - 3.0 :
+- json
+- numpy
+- pandas
+- TfidfVectorizer
+- sigmoid_kernel
+- linear_kernel
+- euclidean_distances
+- pearsonr
 
 ## Contributor
 - Sinem Bozkurt Keser
