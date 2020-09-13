@@ -6,15 +6,13 @@ The project was written by Python.The aim of Paper Recommendation application is
 
 ## Library used in the project
 **Version 1.0 :**
-```
 - json
 - numpy
 - pandas
 - TfidfVectorizer
 - sigmoid_kernel
-```
+
 **Version 2.0/3.0 :** <br />
-```
 - json
 - numpy
 - pandas
@@ -23,7 +21,6 @@ The project was written by Python.The aim of Paper Recommendation application is
 - linear_kernel
 - euclidean_distances
 - pearsonr
-```
 
 ## Contributor
 - Sinem Bozkurt Keser
