@@ -3,7 +3,7 @@ The project was written by Python.The aim of Paper Recommendation application is
 
 ## Methods used in the project
 - Content-Based Filtering
-- Colloborative Filtering
+- Collaborative Filtering
 
 ## Library used in the project
 **Version 1.0 :**
