@@ -9,7 +9,7 @@ The project was written by Python.The aim of Paper Recommendation application is
 **Content-Based Filtering :**
 
 ***Version 1.0 :***
-&nbsp;- json
+- json
 - numpy
 - pandas
 - TfidfVectorizer
