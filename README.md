@@ -6,7 +6,7 @@ The project was written by Python.The aim of Paper Recommendation application is
 - Collaborative Filtering
 
 ## Library used in the project
-**Content-Based Filtering : **
+**Content-Based Filtering :**
 
 ***Version 1.0 :***
 - json
@@ -25,7 +25,7 @@ The project was written by Python.The aim of Paper Recommendation application is
 - euclidean_distances
 - pearsonr
 
-**Collabarative Filtering : **
+**Collabarative Filtering :**
 
 ## Contributor
 - Sinem Bozkurt Keser
