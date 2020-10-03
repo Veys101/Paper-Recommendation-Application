@@ -26,6 +26,17 @@ The project was written by Python.The aim of Paper Recommendation application is
     - pearsonr
 
 **Collabarative Filtering :**
+  
+  * ***Nearest Neighborhood using KNN :***
+    - numpy 
+    - pandas 
+    - matplotlib.pyplot
+    - scipy.sparse 
+    - sklearn.neighbors
+  * ***Matrix Factorization using Rating Matrix :***
+    - numpy 
+    - pandas 
+    - hamming
 
 ## Contributor
 - Sinem Bozkurt Keser
