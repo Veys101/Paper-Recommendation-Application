@@ -47,7 +47,7 @@ The project was written by Python.The aim of Paper Recommendation application is
     - sklearn
     - lightfm
 
-## Contributor
+## Contributors
 - Sinem Bozkurt Keser
 - [Emine Deniz](https://github.com/denizemine)
 - [Veysel Öz](https://github.com/Veys101)
