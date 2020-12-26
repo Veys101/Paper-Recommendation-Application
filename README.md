@@ -1,5 +1,5 @@
 # Paper-Recommendation-Application [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
-The project was written by Python.The aim of Paper Recommendation application is to recommend related paper to users. 
+The project was written by Python.The aim of Paper Recommendation application is to recommend related paper to users. The web platform is called ESOGU Paper. The web platform provide service to access papers and recommend related to that paper. For more details, browse ESOGU Paper folder.
 
 ## Methods used in the project
 - Content-Based Filtering
