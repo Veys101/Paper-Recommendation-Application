@@ -63,25 +63,30 @@ def main(title):
     client = MongoClient('mongodb://localhost:27017')
     db = client['Paper']
     collection = db['Papers']
-    data = collection.find({})
-    data_list = list(data)
-    papers_df = pd.DataFrame(data_list)
-    papers_df.drop(columns=['_id'],inplace=True)
+    
+    if bool(list(collection.find({'title' : title}))):
+        
+        data = collection.find({})
+        data_list = list(data)
+        papers_df = pd.DataFrame(data_list)
+        papers_df.drop(columns=['_id'],inplace=True)
 
-   
-    #ind = indices['Semi-Supervised Learning with Ladder Networks']
-    
-    tfv = TfidfVectorizer(max_features=None, 
-            strip_accents='unicode', analyzer='word',token_pattern=r'\w{3,}',
-            ngram_range=(1, 3),
-            stop_words = 'english')
-            
-    papers_df['all_content'] =  papers_df['title'] 
-    tfv_matrix = tfv.fit_transform(papers_df['all_content'])
-    
-    matrix = calc_similarity('cosine_similarity',tfv_matrix)
-    
-    print( give_rec(title,matrix,papers_df).head(10).to_json())
+       
+        #ind = indices['Semi-Supervised Learning with Ladder Networks']
+        
+        tfv = TfidfVectorizer(max_features=None, 
+                strip_accents='unicode', analyzer='word',token_pattern=r'\w{3,}',
+                ngram_range=(1, 3),
+                stop_words = 'english')
+                
+        papers_df['all_content'] =  papers_df['title'] 
+        tfv_matrix = tfv.fit_transform(papers_df['all_content'])
+        
+        matrix = calc_similarity('cosine_similarity',tfv_matrix)
+        
+        print(give_rec(title,matrix,papers_df).head(10).to_json())
+    else:
+        print()
 
 if __name__ == "__main__":
     main(sys.argv[1])
