@@ -1,27 +1,5 @@
   <?php
  
-  function is_title_available(string $paper_title){
-    include 'mongodb.php';
-    $filter = [ 'title' => $paper_title ]; 
-    $query = new MongoDB\Driver\Query($filter); 
-    $rows = $mongo_conn->executeQuery("Paper.Papers", $query);
-
-    $paper = current($rows->toArray());
-
-    $check;
-
-    if(empty($paper)){
-
-      $check = false;
-
-    }else{
-
-      $check = true;
-    }
-
-    return $check;
-  }
-
   function is_recommendation_engine_being_worked(string $paper_title){
 
     //$command = escapeshellcmd('conda config --set auto_activate_base True && activate recommendation && python recommendation_engine.py');
@@ -42,7 +20,7 @@
 
   function recommended_paper($paper_title) {        
 
-    if(is_title_available($paper_title) && !is_null($output = is_recommendation_engine_being_worked($paper_title))){
+    if(!is_null($output = is_recommendation_engine_being_worked($paper_title))){
         echo"<form action='paper.php' method='POST'>";
           echo"<div style='color:white'>";
 
