@@ -69,9 +69,9 @@ if (isset($_POST['paper_id'])) {
   </div>
 
 
-  <footer style="position: sticky; bottom: 0; width: 100%; text-align: center;color : white; background-color: black" >
+  <footer class="page-footer font-small blue" style="position: absolute; bottom: 20; width: 100%; text-align: center;height: 50px" >
 
-      <div class="footer-copyright text-center py-3">© 2020 Copyright : ESOGU Paper</div>
+      <div class="footer-copyright text-center py-3" style="color:#FFFFFF">© 2020 Copyright : ESOGU Paper</div>
 
   </footer>
 

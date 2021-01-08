@@ -12,7 +12,7 @@ session_start();
   <link rel="stylesheet" href="homepage.css" type="text/css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 </head>
-  <body style='background-color:#000000;'>
+  <body style='background-color:#000000'>
     <header>
 
         <nav class="navbar navbar-expand-md navbar-dark bg-dark">
@@ -66,9 +66,9 @@ session_start();
                         </div>
                         </div>";
             ?>
-      <div class="jumbotron" style="background-color:#1C1C1C;">
-      	<a href='homepage.php' style='font-size: 20px;color:#17A2B8;border:1px solid #17A2B8;border-radius:5px;padding:10px;text-decoration:none;'>Back to Home </a>
-        <h2 style='margin-top:20px;padding-top:0px;color:white;'></h2>
+      <div class="jumbotron" style="background-color:#1C1C1C;height:60vh;">
+      	<a href='homepage.php' style='font-size: 20px;color:#17A2B8;border:1px solid #17A2B8;border-radius:5px;padding:10px;text-decoration:none'>Back to Home </a>
+        <h2 style='margin-top:20px;padding-top:0px;color:white'></h2>
 
             <?php
             include 'searchback.php';
@@ -78,7 +78,7 @@ session_start();
 
 
   </section>
-  <footer class="page-footer font-small blue" style="position: fixed; bottom: 0; width: 100%; text-align: center" >
+ <footer class="page-footer font-small blue" style="position: absolute; bottom: 20; width: 100%; text-align: center;height: 50px" >
 
       <div class="footer-copyright text-center py-3">© 2020 Copyright : ESOGU Paper</div>
 

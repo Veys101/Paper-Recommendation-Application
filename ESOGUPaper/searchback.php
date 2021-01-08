@@ -21,7 +21,6 @@ if(isset($_POST['submit'])){
         echo"<div style='color:white'>";
           echo "<input type='submit' name='submit' class='btn btn-outline-info' style='width:100%; text-align: left;display:block; padding-bottom:5px; margin-bottom:5px' value='".$paper->title."'/>";
           echo "<input type='hidden' id='paper_id' name='paper_id' value='".$paper->id."'>";
-            //echo "$row->id : $row->title <br>";
         echo"</div>";
       echo"</form>"; 
 
@@ -30,7 +29,7 @@ if(isset($_POST['submit'])){
       
   } else {
     
-     echo "<h2 style='margin-top:40px;padding-top:0px;color:white;'>Not Found</h2>";
+     echo "<h2 style='margin-top:40px;padding-top:0px;color:white'>Not Found</h2>";
   }
 
  
