@@ -6,7 +6,7 @@ session_start();
  <html lang="en" dir="ltr">
  <head>
    <meta charset="utf-8">
-   <title>NeonFlix-Account</title>
+   <title>ESOGU Paper-Account</title>
    <link rel="stylesheet" href="homepage.css" type="text/css">
    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
  </head>
@@ -15,7 +15,7 @@ session_start();
 
          <nav class="navbar navbar-expand-md navbar-dark bg-dark">
              <a href="homepage.php" class="navbar-brand"> <img src="images/logo.png" alt=""> </a>
-             <span class="navbar-text">NeonFlix</span>
+             <span class="navbar-text">ESOGU Paper</span>
 
              <ul class="navbar-nav">
 
@@ -33,9 +33,9 @@ session_start();
         <?php
               include 'dbh.php';
               $id = $_SESSION['id'];
-              $sql = "SELECT * FROM user1 WHERE id = $id ";
-              $newrecords = mysqli_query($conn,$sql);
-              $result = mysqli_fetch_assoc($newrecords);
+              $sql = "SELECT * FROM dbo.Users1 WHERE id = $id ";
+              $newrecords = sqlsrv_query($conn,$sql);
+              $result = sqlsrv_fetch_array($newrecords);
 
       echo"  <form  action='update.php' method='POST'>
 
@@ -68,9 +68,6 @@ session_start();
 
               ";
          ?>
-
-
-
 
       </div>
 

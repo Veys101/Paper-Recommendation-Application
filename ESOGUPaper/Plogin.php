@@ -5,12 +5,12 @@
 
 
 
-    $username =  $_POST['mail'];
+    $usermail =  $_POST['mail'];
     $password =  $_POST['pass'];
 
 
 
-    $sql = "SELECT * FROM dbo.user1 WHERE username = '$username' AND passwd = '$password' ";
+    $sql = "SELECT * FROM dbo.Users1 WHERE email = '$usermail' AND passwd = '$password' ";
 
     $result = sqlsrv_query($conn,$sql);
 

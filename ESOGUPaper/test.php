@@ -7,7 +7,7 @@ session_start();
  <!DOCTYPE html>
  <head>
    <meta charset="utf-8">
-   <title>Registration</title>
+   <title>ESOGUPaper-SignUp</title>
    <link rel="stylesheet" href="user.css" type="text/css">
    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
  </head>
@@ -176,10 +176,15 @@ session_start();
    </div>
 
  </header>
-  <footer class="page-footer font-small blue" style="position: fixed; bottom: 0; width: 100%; text-align: center" >
+ 
+  <footer class="page-footer font-small blue" style="position: fixed; bottom: 0; width: 100%; text-align: center;height: 50px" >
 
       <div class="footer-copyright text-center py-3">© 2020 Copyright : ESOGU Paper</div>
 
   </footer>
+
+
   </body>
+
+
 </html>

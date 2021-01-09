@@ -33,7 +33,7 @@ session_start();
           <div class="jumbotron">
             <h1>Login to your account</h1> <br>
             <form class="" action="Plogin.php" method="POST"> <br><br>
-              <input type="email" class="form-control" placeholder="Usename/ Email Address" name="mail" value="">
+              <input type="email" class="form-control" placeholder="Email Address" name="mail" value="">
               <br>
               <input type="password" class="form-control" placeholder="Password" name="pass" value="">
               <br><br>

@@ -9,8 +9,8 @@ if(isset($_POST['sub'])){
     $rid = $_SESSION['id'];
     $date = $_POST['dob'];
 
-    $nsql = "UPDATE user1 SET name= '$nam', DOB= '$date',phone= '$phn' WHERE id='$rid'";
-    $result = mysqli_query($conn,$nsql);
+    $nsql = "UPDATE dbo.Users1 SET name= '$nam', DOB= '$date',phone= '$phn' WHERE id='$rid'";
+    $result = sqlsrv_query($conn,$nsql);
     header("Location: account.php");
    }
 ?>

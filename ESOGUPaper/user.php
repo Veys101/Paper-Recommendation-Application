@@ -18,7 +18,7 @@
     $dob = $date."/".$month."/".$year;
 
 
-    $sql = "INSERT INTO dbo.user1(username, passwd, name, phone, email, DOB) values('$username','$password','$name','$phn','$email','$dob')";
+    $sql = "INSERT INTO dbo.Users1(username, passwd, name, phone, email, DOB) values('$username','$password','$name','$phn','$email','$dob')";
     $result = sqlsrv_query($conn,$sql);
 
     header("Location: user-login.php");
