@@ -1,14 +1,11 @@
 <?php
   session_start();
-  include 'dbh.php';
-
-
-
+    include 'dbh.php';
+    $instance = ConnectDb::getInstance();
+    $conn = $instance->getConnection();
 
     $usermail =  $_POST['mail'];
     $password =  $_POST['pass'];
-
-
 
     $sql = "SELECT * FROM dbo.Users1 WHERE email = '$usermail' AND passwd = '$password' ";
 

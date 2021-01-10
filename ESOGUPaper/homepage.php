@@ -28,6 +28,8 @@ if(empty($_SESSION['id'])){
             <ul class="navbar-nav">
               <?php
  					          include 'dbh.php';
+                    $instance = ConnectDb::getInstance();
+                    $conn = $instance->getConnection();
                     $id = $_SESSION['id'];
                     $quer = "SELECT * FROM dbo.Users1 WHERE id = '$id' ";
                     $check = sqlsrv_query($conn,$quer);

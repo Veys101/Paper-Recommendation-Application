@@ -1,6 +1,8 @@
 <?php
   session_start();
   include 'dbh.php';
+  $instance = ConnectDb::getInstance();
+  $conn = $instance->getConnection();
 
 if(isset($_POST['sub'])){
 

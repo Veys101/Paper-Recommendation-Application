@@ -21,15 +21,13 @@ session_start();
 
             <ul class="navbar-nav">
             <?php
- 					include 'dbh.php';
+ 					          include 'dbh.php';
+                    $instance = ConnectDb::getInstance();
+                    $conn = $instance->getConnection();
                     $id = $_SESSION['id'];
-                    $quer = "SELECT * FROM dbo.user1 WHERE id = '$id' ";
-                    $quer2 = "SELECT * FROM dbo.movies WHERE mid in (SELECT mid from user1 where id = '$id') ";
+                    $quer = "SELECT * FROM dbo.Users1 WHERE id = '$id' ";
                     $check = sqlsrv_query($conn,$quer);
                     $rel = sqlsrv_fetch_array($check,SQLSRV_FETCH_ASSOC);
-                    $check2 = sqlsrv_query($conn,$quer2);
-                    $rel2 = sqlsrv_fetch_array($check2,SQLSRV_FETCH_ASSOC);
-                  
 
               if (isset($_SESSION['id'])) {
                 if ($_SESSION['id'] == 1) {

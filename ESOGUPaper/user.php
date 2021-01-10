@@ -2,8 +2,9 @@
 
 <?php
   session_start();
-  include 'dbh.php';
-
+    include 'dbh.php';
+    $instance = ConnectDb::getInstance();
+    $conn = $instance->getConnection();
 
     $fname = strtolower($_POST['fname']);
     $lname =  strtolower($_POST['lname']);

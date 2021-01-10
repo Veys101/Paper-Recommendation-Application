@@ -32,6 +32,8 @@ session_start();
       <div class="container">
         <?php
               include 'dbh.php';
+              $instance = ConnectDb::getInstance();
+              $conn = $instance->getConnection();
               $id = $_SESSION['id'];
               $sql = "SELECT * FROM dbo.Users1 WHERE id = $id ";
               $newrecords = sqlsrv_query($conn,$sql);
