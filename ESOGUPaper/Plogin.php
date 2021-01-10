@@ -7,8 +7,7 @@
     $usermail =  $_POST['mail'];
     $password =  $_POST['pass'];
 
-    $sql = "SELECT * FROM dbo.Users1 WHERE email = '$usermail' AND passwd = '$password' ";
-
+    $sql = "EXEC dbo.user_login @mail = '$usermail', @passwd='$password'";
     $result = sqlsrv_query($conn,$sql);
 
     if(!$row = sqlsrv_fetch_array($result,SQLSRV_FETCH_ASSOC)) {
